@@ -1,20 +1,78 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Occam Edge Landing Page
 
-# Run and deploy your AI Studio app
+A modern, responsive landing page for Occam Edge - a risk intelligence system for technology projects that transforms technical and financial data into actionable insights for strategic decision-making.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/19eVNOjIWZgFkWvg_hgWVXWcJcGXEOYns
+- Clean, modern UI built with React and TypeScript
+- Responsive design that works on all devices
+- Smooth scrolling navigation
+- Feature showcase section
+- Target market information
+- Mission statement
+- Contact form integration
+- Login and demo request functionality
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Styling (via utility classes)
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js (v18 or higher)
+- pnpm (or npm/yarn)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Appolica/occam-edge-landing-page.git
+   cd occam-edge-landing-page
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Run the development server:
+   ```bash
+   pnpm run dev
+   ```
+
+4. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:5173`)
+
+## Build for Production
+
+```bash
+pnpm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Project Structure
+
+```
+├── components/
+│   ├── ui/              # Reusable UI components
+│   │   ├── Button.tsx
+│   │   └── Card.tsx
+│   ├── Features.tsx     # Features section
+│   ├── Footer.tsx       # Footer component
+│   ├── Header.tsx       # Header with navigation
+│   ├── Hero.tsx         # Hero section
+│   ├── Mission.tsx      # Mission statement
+│   └── TargetMarket.tsx # Target market section
+├── App.tsx              # Main app component
+├── index.tsx            # Entry point
+└── index.html           # HTML template
+```
+
+## License
+
+© 2025 Occam Edge. All rights reserved.
