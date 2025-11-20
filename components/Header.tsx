@@ -50,7 +50,7 @@ const Header: React.FC = () => {
         </nav>
         <div className="hidden md:flex items-center space-x-4">
             <Button onClick={(e) => scrollToSection(e, 'contact')}>Request a Demo</Button>
-            <Button variant="outline" onClick={() => window.open('https://dashboard.occamedge.com', '_blank')}>
+            <Button variant="outline" onClick={() => window.open('https://dashboard.occam-edge.com/login', '_blank')}>
               Login
             </Button>
         </div>
