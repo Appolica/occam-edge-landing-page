@@ -19,12 +19,42 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-background pt-20">
-      <div className="container mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-foreground leading-tight tracking-tighter mb-4">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden" style={{
+      background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)'
+    }}>
+      {/* Top-left decorative node */}
+      <div className="absolute top-12 left-12 opacity-20">
+        <svg width="200" height="200" viewBox="0 0 240 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="140" cy="140" r="20" fill="#60a5fa" />
+          <circle cx="220" cy="120" r="20" fill="#60a5fa" />
+          <circle cx="180" cy="200" r="20" fill="#60a5fa" />
+          <circle cx="120" cy="240" r="20" fill="#60a5fa" />
+          <line x1="140" y1="140" x2="220" y2="120" stroke="#60a5fa" strokeWidth="3" />
+          <line x1="140" y1="140" x2="180" y2="200" stroke="#60a5fa" strokeWidth="3" />
+          <line x1="180" y1="200" x2="220" y2="120" stroke="#60a5fa" strokeWidth="3" />
+          <line x1="180" y1="200" x2="120" y2="240" stroke="#60a5fa" strokeWidth="3" />
+        </svg>
+      </div>
+
+      {/* Bottom-right decorative node */}
+      <div className="absolute bottom-12 right-12 opacity-20">
+        <svg width="200" height="200" viewBox="0 0 240 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="140" cy="140" r="20" fill="#60a5fa" />
+          <circle cx="220" cy="120" r="20" fill="#60a5fa" />
+          <circle cx="180" cy="200" r="20" fill="#60a5fa" />
+          <circle cx="120" cy="240" r="20" fill="#60a5fa" />
+          <line x1="140" y1="140" x2="220" y2="120" stroke="#60a5fa" strokeWidth="3" />
+          <line x1="140" y1="140" x2="180" y2="200" stroke="#60a5fa" strokeWidth="3" />
+          <line x1="180" y1="200" x2="220" y2="120" stroke="#60a5fa" strokeWidth="3" />
+          <line x1="180" y1="200" x2="120" y2="240" stroke="#60a5fa" strokeWidth="3" />
+        </svg>
+      </div>
+
+      <div className="container mx-auto px-6 text-center relative z-10">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tighter mb-4">
           Turn Uncertainty into Investable Clarity
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
           Occam Edge is a risk intelligence system for technology projects, transforming technical and financial data into actionable insights for strategic decision-making.
         </p>
         <div className="flex justify-center items-center space-x-4">

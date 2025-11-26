@@ -7,11 +7,11 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: React.FC<ButtonProps> = ({ children, size = 'md', variant = 'default', ...props }) => {
-  const sizeClasses = size === 'lg' ? 'py-3 px-8 text-base' : 'py-2 px-6 text-sm';
+  const sizeClasses = size === 'lg' ? 'py-3 px-8 text-base' : 'py-1.5 px-5 text-sm';
   
   const variantClasses = {
     default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-    outline: 'border border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground',
+    outline: 'border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary',
   };
 
   return (
