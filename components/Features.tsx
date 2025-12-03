@@ -19,9 +19,23 @@ const Features: React.FC = () => {
     <section id="features" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tighter">A Complete Risk Intelligence System</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tighter">A Complete Project Intelligence Platform</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">Our platform provides end-to-end analysis to de-risk complex technology deployments.</p>
         </div>
+        
+        {/* Video Section */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+              src="https://www.youtube.com/embed/k7mXpGWX5RU"
+              title="Occam Edge Platform Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-start">

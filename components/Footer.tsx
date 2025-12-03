@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
                 Contact us today for a personalized demo and see how Occam Edge can bring clarity to your technology investments.
             </p>
-            <Button size="lg" onClick={() => window.location.href = 'mailto:contact@occamedge.com'}>Get in Touch</Button>
+            <Button size="lg" onClick={() => window.location.href = 'mailto:Christian@occam-edge.com'}>Get in Touch</Button>
         </div>
     </section>
     <footer className="bg-muted py-8 border-t border-gray-200">

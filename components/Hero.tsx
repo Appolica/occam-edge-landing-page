@@ -52,13 +52,13 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tighter mb-4">
-          Turn Uncertainty into Investable Clarity
+          Know the Odds. Invest with Confidence.
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-          Occam Edge is a risk intelligence system for technology projects, transforming technical and financial data into actionable insights for strategic decision-making.
+          Occam Edge is a Project Intelligence Platform built to accurately assess critical risks and validate bankability of new hardware technologies
         </p>
         <div className="flex justify-center items-center space-x-4">
-            <Button onClick={(e) => scrollToSection(e, 'contact')} size="lg">Request a Demo</Button>
+            <Button onClick={() => window.location.href = 'mailto:Christian@occam-edge.com'} size="lg">Request a Demo</Button>
             <Button onClick={(e) => scrollToSection(e, 'features')} size="lg" variant="outline">Learn More</Button>
         </div>
       </div>

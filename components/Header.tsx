@@ -53,7 +53,7 @@ const Header: React.FC = () => {
           ))}
         </nav>
         <div className="hidden md:flex items-center space-x-4 ml-auto">
-            <Button onClick={(e) => scrollToSection(e, 'contact')}>Request a Demo</Button>
+            <Button onClick={() => window.location.href = 'mailto:Christian@occam-edge.com'}>Request a Demo</Button>
             <button 
               onClick={() => window.open('https://dashboard.occam-edge.com/login', '_blank')}
               className={`inline-flex items-center justify-center font-semibold rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none transition-all duration-300 py-1.5 px-5 text-sm border-2 ${isScrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-primary'}`}
